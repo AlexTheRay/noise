@@ -245,19 +245,15 @@ st.sidebar.write("Created by Intellygiene.")
 
 
 
-# Function to encode the local image as Base64
 def get_base64_encoded_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-# Path to your local image and the URL you want to link to
-image_path = "/Users/calebginorio/Desktop/intellygiene.png"  # Replace with your local image path
-website_url = "https://intellygiene.com"  # Replace with the desired website URL
+image_path = "/intellygiene.png"
+website_url = "https://intellygiene.com"
 
-# Encode the image
 encoded_image = get_base64_encoded_image(image_path)
 
-# Sidebar with the clickable image
 st.sidebar.markdown(
     f"""
     <a href="{website_url}" target="_blank">
