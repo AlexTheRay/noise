@@ -249,7 +249,7 @@ def get_base64_encoded_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-image_path = "/intellygiene.png"
+image_path = "intellygiene.png"
 website_url = "https://intellygiene.com"
 
 encoded_image = get_base64_encoded_image(image_path)
