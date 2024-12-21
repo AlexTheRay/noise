@@ -40,7 +40,7 @@ if selected_equation == "Sound Pressure Level":
     col1.latex(r"SPL = 20 \log \left(\frac{P}{P_0}\right)")
     col1.write(" ###### Where:")
     col1.latex("SPL \\ is \\ the \\ sound \\ pressure \\ level \\ in \\ dB")
-    col1.latex("P \\ is \\ the \\ sound \\ pressure")
+    col1.latex("P \\ is \\ the \\ sound \\ pressure in Pa")
     col1.latex("P_0 \\ is \\ the \\ reference \\ sound \\ pressure \\ , \\ 0.00002 \\ Pa")
     P = st.number_input("Enter sound pressure (P):")
     Po = st.number_input("Enter reference pressure (Po):",format="%.5f", value=0.00002)
