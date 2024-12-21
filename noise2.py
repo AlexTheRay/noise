@@ -101,7 +101,7 @@ if selected_equation == "SPL over Distance":
     col1.latex(" D_1 \\ is \\ the \\ original \\ distance \\ from \\ the \\ source")
     col1.latex(" D_2 \\ is \\ the \\ new \\ distance \\ from \\ the \\ source")
     st.empty()
-    st.write("###### Enter three out of the four variables below")
+    st.write("###### Enter three out of the four variables below. Distance units must match.")
     SPL1 = st.text_input("Enter sound pressure level at D1 (SPL1):")
     SPL2 = st.text_input("Enter sound pressure level at D2 (SPL2):")
     D1 = st.text_input("Enter original distance from source (D1):")
@@ -135,8 +135,8 @@ if selected_equation == "SPL over Distance":
             st.latex(" SPL_1 = {} - 20log({}/{}) = {:.2f} \\text{{dB}}".format(SPL2, D1, D2, SPL1))
         st.write("SPL1 (dB):", SPL1)
         st.write("SPL2 (dB):", SPL2)
-        st.write("d1 (m):", D1)
-        st.write("d2 (m):", D2)
+        st.write("d1 (distance units):", D1)
+        st.write("d2 (distance units):", D2)
 
 
 
